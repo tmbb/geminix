@@ -1,0 +1,5 @@
+<%= @schema.description || "TODO: no high-level description" %>
+
+Fields:
+<%= for p <- @schema.properties do %>
+- `:<%= p.elixir_name %>` (<%= p.markdown_type %>) - <%= p.description %><% end %>

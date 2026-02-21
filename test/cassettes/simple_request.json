@@ -1,0 +1,181 @@
+{
+  "interactions": [
+    {
+      "recorded_at": "2026-01-24T16:11:00.793304Z",
+      "request": {
+        "body_json": {
+          "contents": [
+            {
+              "parts": [
+                {
+                  "text": "What is the capital of Germany?"
+                }
+              ],
+              "role": "user"
+            }
+          ],
+          "generation_config": {
+            "response_mime_type": "text/plain"
+          },
+          "safety_settings": [],
+          "tools": []
+        },
+        "body_type": "json",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "POST",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/v1beta/models/gemini-2.5-flash:generateContent"
+      },
+      "response": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-length": [
+            "0"
+          ],
+          "content-type": [
+            "text/html"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:11:02 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=21"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 404
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:13:21.781088Z",
+      "request": {
+        "body_json": {
+          "contents": [
+            {
+              "parts": [
+                {
+                  "text": "What is the capital of Germany?"
+                }
+              ],
+              "role": "user"
+            }
+          ],
+          "generation_config": {
+            "response_mime_type": "text/plain"
+          },
+          "safety_settings": [],
+          "tools": []
+        },
+        "body_type": "json",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "POST",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
+      },
+      "response": {
+        "body_json": {
+          "candidates": [
+            {
+              "content": {
+                "parts": [
+                  {
+                    "text": "The capital of Germany is **Berlin**."
+                  }
+                ],
+                "role": "model"
+              },
+              "finishReason": "STOP",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-flash",
+          "responseId": "o-90aez8DtrOnsEP966kyAI",
+          "usageMetadata": {
+            "candidatesTokenCount": 8,
+            "promptTokenCount": 8,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 8
+              }
+            ],
+            "thoughtsTokenCount": 25,
+            "totalTokenCount": 41
+          }
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:13:23 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=683"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    }
+  ],
+  "version": "2.0"
+}

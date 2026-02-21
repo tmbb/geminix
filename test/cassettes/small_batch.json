@@ -1,0 +1,1725 @@
+{
+  "interactions": [
+    {
+      "recorded_at": "2026-01-24T16:28:13.693272Z",
+      "request": {
+        "body_json": {
+          "file": {
+            "display_name": "Test batch"
+          }
+        },
+        "body_type": "json",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/jsonl"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ],
+          "x-goog-upload-command": [
+            "start"
+          ],
+          "x-goog-upload-header-content-length": [
+            "645"
+          ],
+          "x-goog-upload-header-content-type": [
+            "application/jsonl"
+          ],
+          "x-goog-upload-protocol": [
+            "resumable"
+          ]
+        },
+        "method": "POST",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/upload/v1beta/files"
+      },
+      "response": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-length": [
+            "0"
+          ],
+          "content-type": [
+            "text/plain; charset=utf-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:28:15 GMT"
+          ],
+          "server": [
+            "UploadServer"
+          ],
+          "x-goog-upload-chunk-granularity": [
+            "8388608"
+          ],
+          "x-goog-upload-control-url": [
+            "https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AJRbA5UjNaxosyic4ryAMHuJnuc4WatmdbIbEi7m134igAKsQDN8iNwQ3dhjpf64u6pX6hlp6BhrzHdA4wtK4NzqUgM0Ji219odLSCVdWde3cg&upload_protocol=resumable"
+          ],
+          "x-goog-upload-header-content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "x-goog-upload-header-vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-goog-upload-header-x-google-backends": [
+            "unix:/tmp/esfbackend.1769186144.338964.3877024"
+          ],
+          "x-goog-upload-header-x-google-esf-cloud-client-params": [
+            "backend_service_name: \"generativelanguage.googleapis.com\" backend_fully_qualified_method: \"google.ai.generativelanguage.v1beta.FileService.CreateFile\""
+          ],
+          "x-goog-upload-header-x-google-gfe-backend-request-cost": [
+            "10.4678"
+          ],
+          "x-goog-upload-header-x-google-security-signals": [
+            "FRAMEWORK=ONE_PLATFORM,ENV=borg,ENV_DEBUG=borg_user:genai-api;borg_job:prod.genai-api"
+          ],
+          "x-goog-upload-header-x-google-session-info": [
+            "GgQYECgLIAE6IxIhZ2VuZXJhdGl2ZWxhbmd1YWdlLmdvb2dsZWFwaXMuY29t"
+          ],
+          "x-goog-upload-status": [
+            "active"
+          ],
+          "x-goog-upload-url": [
+            "https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AJRbA5UjNaxosyic4ryAMHuJnuc4WatmdbIbEi7m134igAKsQDN8iNwQ3dhjpf64u6pX6hlp6BhrzHdA4wtK4NzqUgM0Ji219odLSCVdWde3cg&upload_protocol=resumable"
+          ],
+          "x-guploader-uploadid": [
+            "AJRbA5UjNaxosyic4ryAMHuJnuc4WatmdbIbEi7m134igAKsQDN8iNwQ3dhjpf64u6pX6hlp6BhrzHdA4wtK4NzqUgM0Ji219odLSCVdWde3cg"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:28:15.229279Z",
+      "request": {
+        "body": "{\"request\":{\"tools\":[],\"contents\":[{\"parts\":[{\"text\":\"What is the capital of Mali?\"}],\"role\":\"user\"}],\"generation_config\":{\"response_mime_type\":\"text/plain\"},\"safety_settings\":[]},\"metadata\":{\"key\":\"request-001\"}}\n{\"request\":{\"tools\":[],\"contents\":[{\"parts\":[{\"text\":\"What is the capital of Germany?\"}],\"role\":\"user\"}],\"generation_config\":{\"response_mime_type\":\"text/plain\"},\"safety_settings\":[]},\"metadata\":{\"key\":\"request-002\"}}\n{\"request\":{\"tools\":[],\"contents\":[{\"parts\":[{\"text\":\"What is the capital of Spain?\"}],\"role\":\"user\"}],\"generation_config\":{\"response_mime_type\":\"text/plain\"},\"safety_settings\":[]},\"metadata\":{\"key\":\"request-002\"}}",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-length": [
+            "645"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ],
+          "x-goog-upload-command": [
+            "upload, finalize"
+          ],
+          "x-goog-upload-offset": [
+            "0"
+          ]
+        },
+        "method": "POST",
+        "query_string": "upload_id=AJRbA5UjNaxosyic4ryAMHuJnuc4WatmdbIbEi7m134igAKsQDN8iNwQ3dhjpf64u6pX6hlp6BhrzHdA4wtK4NzqUgM0Ji219odLSCVdWde3cg&upload_protocol=resumable",
+        "uri": "https://generativelanguage.googleapis.com/upload/v1beta/files"
+      },
+      "response": {
+        "body_json": {
+          "file": {
+            "createTime": "2026-01-24T16:28:16.716173Z",
+            "displayName": "Test batch",
+            "expirationTime": "2026-01-26T16:28:16.072770913Z",
+            "mimeType": "application/jsonl",
+            "name": "files/01ar0t1j0doe",
+            "sha256Hash": "N2IzOWFmMmI4NDM1Mzg5MjViM2NjOGI0NGYyODVjODc5NzFhZDcxOTdkNmEyOTZiZmY5NzdmMzFjZThjNzk1MQ==",
+            "sizeBytes": "645",
+            "source": "UPLOADED",
+            "state": "ACTIVE",
+            "updateTime": "2026-01-24T16:28:16.716173Z",
+            "uri": "https://generativelanguage.googleapis.com/v1beta/files/01ar0t1j0doe"
+          }
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:28:16 GMT"
+          ],
+          "server": [
+            "UploadServer"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-goog-upload-status": [
+            "final"
+          ],
+          "x-guploader-uploadid": [
+            "AJRbA5UjNaxosyic4ryAMHuJnuc4WatmdbIbEi7m134igAKsQDN8iNwQ3dhjpf64u6pX6hlp6BhrzHdA4wtK4NzqUgM0Ji219odLSCVdWde3cg"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:28:17.074395Z",
+      "request": {
+        "body_json": {
+          "batch": {
+            "display_name": "Test batch",
+            "input_config": {
+              "file_name": "files/01ar0t1j0doe"
+            }
+          }
+        },
+        "body_type": "json",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "POST",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:batchGenerateContent"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_PENDING",
+            "updateTime": "2026-01-24T16:28:17.198122775Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:28:18 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=1820"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:28:17.199632Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_PENDING",
+            "updateTime": "2026-01-24T16:28:17.198122775Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:28:18 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=101"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:28:47.313362Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_PENDING",
+            "updateTime": "2026-01-24T16:28:17.198122775Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:28:48 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=89"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:29:17.428077Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_PENDING",
+            "updateTime": "2026-01-24T16:28:17.198122775Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:29:18 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=98"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:29:47.560727Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_PENDING",
+            "updateTime": "2026-01-24T16:28:17.198122775Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:29:49 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=115"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:30:17.723810Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_PENDING",
+            "updateTime": "2026-01-24T16:28:17.198122775Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:30:19 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=143"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:30:47.837205Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_PENDING",
+            "updateTime": "2026-01-24T16:28:17.198122775Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:30:49 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=97"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:31:17.968477Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_PENDING",
+            "updateTime": "2026-01-24T16:28:17.198122775Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:31:19 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=114"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:31:48.081194Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_PENDING",
+            "updateTime": "2026-01-24T16:28:17.198122775Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:31:49 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=94"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:32:18.272245Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_PENDING",
+            "updateTime": "2026-01-24T16:28:17.198122775Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:32:19 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=161"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:32:48.383552Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_PENDING",
+            "updateTime": "2026-01-24T16:28:17.198122775Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:32:49 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=90"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:33:18.515888Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_PENDING",
+            "updateTime": "2026-01-24T16:28:17.198122775Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:33:20 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=113"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:33:48.642168Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_PENDING",
+            "updateTime": "2026-01-24T16:28:17.198122775Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:33:50 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=107"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:34:18.806606Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_PENDING",
+            "updateTime": "2026-01-24T16:28:17.198122775Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:34:20 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=146"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:34:48.932403Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_PENDING",
+            "updateTime": "2026-01-24T16:28:17.198122775Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:34:50 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=105"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:35:19.045328Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_PENDING",
+            "updateTime": "2026-01-24T16:28:17.198122775Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:35:20 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=93"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:35:49.167325Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_RUNNING",
+            "updateTime": "2026-01-24T16:35:24.551724314Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:35:50 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=88"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:36:19.334113Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "pendingRequestCount": "3",
+              "requestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "state": "BATCH_STATE_RUNNING",
+            "updateTime": "2026-01-24T16:35:24.551724314Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:36:20 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=144"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:36:49.463306Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "",
+        "uri": "https://generativelanguage.googleapis.com/v1beta/batches/b0apw3patiy69lm9o71an0kgs19wwevufwow"
+      },
+      "response": {
+        "body_json": {
+          "done": true,
+          "metadata": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatch",
+            "batchStats": {
+              "requestCount": "3",
+              "successfulRequestCount": "3"
+            },
+            "createTime": "2026-01-24T16:28:17.198122775Z",
+            "displayName": "Test batch",
+            "endTime": "2026-01-24T16:36:25.707253740Z",
+            "inputConfig": {
+              "fileName": "files/01ar0t1j0doe"
+            },
+            "model": "models/gemini-2.5-flash",
+            "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+            "output": {
+              "responsesFile": "files/batch-b0apw3patiy69lm9o71an0kgs19wwevufwow"
+            },
+            "state": "BATCH_STATE_SUCCEEDED",
+            "updateTime": "2026-01-24T16:36:25.707253470Z"
+          },
+          "name": "batches/b0apw3patiy69lm9o71an0kgs19wwevufwow",
+          "response": {
+            "@type": "type.googleapis.com/google.ai.generativelanguage.v1main.GenerateContentBatchOutput",
+            "responsesFile": "files/batch-b0apw3patiy69lm9o71an0kgs19wwevufwow"
+          }
+        },
+        "body_type": "json",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "content-type": [
+            "application/json; charset=UTF-8"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:36:51 GMT"
+          ],
+          "server": [
+            "scaffolding on HTTPServer2"
+          ],
+          "server-timing": [
+            "gfet4t7; dur=105"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-xss-protection": [
+            "0"
+          ]
+        },
+        "status": 200
+      }
+    },
+    {
+      "recorded_at": "2026-01-24T16:36:49.790539Z",
+      "request": {
+        "body": "",
+        "body_type": "text",
+        "headers": {
+          "accept-encoding": [
+            "gzip"
+          ],
+          "user-agent": [
+            "req/0.5.17"
+          ]
+        },
+        "method": "GET",
+        "query_string": "alt=media",
+        "uri": "https://generativelanguage.googleapis.com/download/v1beta/files/batch-b0apw3patiy69lm9o71an0kgs19wwevufwow:download"
+      },
+      "response": {
+        "body": "{\"response\":{\"responseId\":\"6fR0acfZOuje_uMPr7T_4Aw\",\"modelVersion\":\"gemini-2.5-flash\",\"usageMetadata\":{\"thoughtsTokenCount\":21,\"promptTokensDetails\":[{\"modality\":\"TEXT\",\"tokenCount\":8}],\"totalTokenCount\":38,\"promptTokenCount\":8,\"candidatesTokenCount\":9},\"candidates\":[{\"finishReason\":\"STOP\",\"content\":{\"role\":\"model\",\"parts\":[{\"text\":\"The capital of Mali is **Bamako**.\"}]},\"index\":0}]},\"metadata\":{\"key\":\"request-001\"}}\n{\"response\":{\"modelVersion\":\"gemini-2.5-flash\",\"usageMetadata\":{\"totalTokenCount\":37,\"promptTokenCount\":8,\"candidatesTokenCount\":8,\"thoughtsTokenCount\":21,\"promptTokensDetails\":[{\"tokenCount\":8,\"modality\":\"TEXT\"}]},\"candidates\":[{\"index\":0,\"content\":{\"parts\":[{\"text\":\"The capital of Germany is **Berlin**.\"}],\"role\":\"model\"},\"finishReason\":\"STOP\"}],\"responseId\":\"2vR0abeDB_uS_uMPr_DHgAk\"},\"metadata\":{\"key\":\"request-002\"}}\n{\"response\":{\"candidates\":[{\"finishReason\":\"STOP\",\"index\":0,\"content\":{\"role\":\"model\",\"parts\":[{\"text\":\"The capital of Spain is **Madrid**.\"}]}}],\"usageMetadata\":{\"totalTokenCount\":37,\"promptTokensDetails\":[{\"tokenCount\":8,\"modality\":\"TEXT\"}],\"promptTokenCount\":8,\"candidatesTokenCount\":8,\"thoughtsTokenCount\":21},\"modelVersion\":\"gemini-2.5-flash\",\"responseId\":\"CfV0adWyIeyrqtsP3f-BoAs\"},\"metadata\":{\"key\":\"request-002\"}}\n",
+        "body_type": "text",
+        "headers": {
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ],
+          "cache-control": [
+            "private, max-age=0"
+          ],
+          "content-disposition": [
+            "attachment"
+          ],
+          "content-type": [
+            "application/jsonl"
+          ],
+          "date": [
+            "Sat, 24 Jan 2026 16:36:51 GMT"
+          ],
+          "expires": [
+            "Sat, 24 Jan 2026 16:36:51 GMT"
+          ],
+          "server": [
+            "UploadServer"
+          ],
+          "vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+          ],
+          "x-guploader-uploadid": [
+            "AJRbA5VndjLWAEYLCzAHiUP5NFwdbzXiCGbZHDooY50cw04sWy_rkjprSpgee3-E2bSgz8tp6Doxvp8"
+          ]
+        },
+        "status": 200
+      }
+    }
+  ],
+  "version": "2.0"
+}
